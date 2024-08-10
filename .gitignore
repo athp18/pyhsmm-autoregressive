@@ -4,3 +4,4 @@
 *.so
 *.cpp
 /build
+.pdm-python
