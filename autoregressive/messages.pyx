@@ -1,6 +1,4 @@
 # distutils: language = c++
-# distutils: extra_compile_args = -O2 -fopenmp -std=c++11 -DEIGEN_NO_MALLOC -DNDEBUG -w
-# distutils: extra_link_args = -fopenmp
 # cython: boundscheck = False
 
 import numpy as np
@@ -40,7 +38,7 @@ def resample_arhmm(
     cdef int K = len(datas)        # number of sequences
     cdef int D = datas[0].shape[1] # dimension of data (unstrided)
     cdef bool affine = params.shape[2] % D
-    cdef int nlags = (params.shape[2] - affine) / D - 1
+    cdef int nlags = (params.shape[2] - affine) // D - 1
     cdef int32_t[::1] Ts = np.array([d.shape[0] for d in datas]).astype('int32')
 
     cdef vector[int32_t*] stateseqs_v
