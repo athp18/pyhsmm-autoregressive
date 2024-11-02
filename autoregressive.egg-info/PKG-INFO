@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: autoregressive
+Version: 0.1.2
+Summary: Extension for switching vector autoregressive models with pyhsmm
+Home-page: 
+Author-email: Matthew James Johnson <mattjj@csail.mit.edu>
+License: GPL
+Project-URL: repository, https://github.com/mattjj/pyhsmm-autoregressive
+Keywords: bayesian,inference,mcmc,time-series,autoregressive,var,svar
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: C++
+Requires-Python: <3.13,>=3.9
+License-File: LICENSE-GPL
+Requires-Dist: numpy<2.0.0
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: pybasicbayes@ git+https://github.com/sneakers-the-rat/pybasicbayes.git@packaging
+Requires-Dist: pyhsmm@ git+https://github.com/athp18/pyhsmm.git@packaging

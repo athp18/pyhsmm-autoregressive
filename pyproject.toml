@@ -21,7 +21,7 @@ dependencies=[
     'scipy', 
     'matplotlib', 
     "pybasicbayes @ git+https://github.com/sneakers-the-rat/pybasicbayes.git@packaging",
-    "pyhsmm @ git+https://github.com/sneakers-the-rat/pyhsmm.git@packaging",
+    "pyhsmm @ git+https://github.com/athp18/pyhsmm.git@packaging",
 ]
 classifiers=[
     'Intended Audience :: Science/Research',
