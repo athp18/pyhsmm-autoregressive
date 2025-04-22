@@ -20,8 +20,8 @@ dependencies=[
     'numpy<2.0.0', 
     'scipy', 
     'matplotlib', 
-    "pybasicbayes @ git+https://github.com/athp18/pybasicbayes.git",
-    "pyhsmm @ git+https://github.com/athp18/pyhsmm.git",
+    "pybasicbayes @ git+https://github.com/athp18/pybasicbayes",
+    "pyhsmm @ git+https://github.com/athp18/pyhsmm",
 ]
 classifiers=[
     'Intended Audience :: Science/Research',
